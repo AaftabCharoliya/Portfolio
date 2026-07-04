@@ -1,49 +1,54 @@
+import "../styles/Contact.css";
+
 function Contact() {
   return (
-    <section id="contact" data-aos="fade-up"
-      style={{
-        padding: "80px 50px",
-        textAlign: "center",
-      }}
-    >
-      {/* <h2>Mobail No: 9313872789</h2>
+    <section id="contact" className="contact section" data-aos="fade-up">
+      <div className="container">
+        <h2 className="section-title">Contact Me</h2>
 
-      <p>Email: charoliyaaaftab99@gmail.com</p>
+        <div className="contact-card">
+          <div className="contact-item">
+            <span className="contact-icon">📱</span>
+            <span>Your Mobile Number</span>
+          </div>
 
-      <p>GitHub: https://github.com/AaftabCharoliya/Data-Analytics-Project.git</p>
+          <div className="contact-item">
+            <span className="contact-icon">📧</span>
+            <span>
+              <a href="mailto:charoliyaaftab99@gmail.com">
+                charoliyaaftab99@gmail.com
+              </a>
+            </span>
+          </div>
 
-      <p>LinkedIn: https://www.linkedin.com/in/aftab-charoliya</p> */}
+          <div className="contact-item">
+            <span className="contact-icon">💻</span>
+            <a
+              href="https://github.com/AaftabCharoliya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Profile
+            </a>
+          </div>
 
-      <section id="contact" className="contact">
-  <h2>Contact Me</h2>
-
-  <div className="contact-card">
-    <p>📱 Mobile Number</p>
-    <p>📧 Email: charoliyaaftab99@gmail.com</p>
-
-    <p>
-      💻 GitHub:
-      <a
-        href="https://github.com/AaftabCharoliya/Data-Analytics-Project.git"
-        target="_blank"
-      >
-        Visit Profile
-      </a>
-    </p>
-
-    <p>
-      🔗 LinkedIn:
-      <a
-        href=" https://www.linkedin.com/in/aftab-charoliya"
-        target="_blank"
-      >
-        Visit Profile
-      </a>
-    </p>
-  </div>
-</section>
+          <div className="contact-item">
+            <span className="contact-icon">🔗</span>
+            <a
+              href="https://www.linkedin.com/in/aftab-charoliya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
 
 export default Contact;
+
+
+

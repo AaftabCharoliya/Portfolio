@@ -1,34 +1,4 @@
-// function About() {
-//   return (
-//     <section id="about" data-aos="fade-up"
-//       style={{
-//         padding: "80px 50px",
-//         textAlign: "center",
-//       }}
-//     >
-//       <h2 style={{ marginBottom: "20px" }}>
-//         About Me
-//       </h2>
-
-//       <p
-//         style={{
-//           maxWidth: "700px",
-//           margin: "auto",
-//           lineHeight: "1.8",
-//         }}
-//       >
-//         I am a Data Analyst passionate about
-//         transforming raw data into meaningful insights.
-//         I work with Power BI, SQL, Excel and Python
-//         to build dashboards and data-driven solutions.
-//       </p>
-//     </section>
-//   );
-// }
-
-// export default About;
-
-
+import "../styles/About.css";
 
 function About() {
   return (
@@ -123,3 +93,5 @@ function About() {
 }
 
 export default About;
+
+

@@ -1,52 +1,32 @@
-// function Navbar() {
-//   return (
-//     <nav className="navbar"
-//       style={{
-//         display: "flex",
-//         justifyContent: "space-between",
-//         padding: "20px 50px",
-//       }}
-//     >
-//       <h2 className="logo">Portfolio</h2>
-
-//       <div className="nav-links">
-//         <span style={{ marginRight: "20px" }}><a href="#home">Home</a></span>
-//         <span style={{ marginRight: "20px" }}><a href="#about">About</a></span>
-//         <span style={{ marginRight: "20px" }}><a href="#projects">Projects</a></span>
-//         <span><a href="#contact">Contact</a></span>
-//       </div>
-
-//       <a
-//   href="/Aftab_Resume.pdf" download
-//   target="_blank"
-// >
-//   <button className="resume-btn">Resume</button>
-//   </a>
-//     </nav>
-    
-//   );
-// }
-
-// export default Navbar;
-
-
-
+import "../styles/Navbar.css";
 
 function Navbar() {
+  const navItems = [
+    { name: "Home", link: "#home" },
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
+  ];
+
   return (
     <nav className="navbar">
-      <h2 className="logo">Portfolio</h2>
+      <div className="logo">Portfolio</div>
 
-      <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <ul className="nav-links">
+        {navItems.map((item) => (
+          <li key={item.name}>
+            <a href={item.link}>{item.name}</a>
+          </li>
+        ))}
+      </ul>
 
-      <a href="/Aftab_Resume.pdf" download target="_blank" rel="noreferrer">
-        <button className="resume-btn">Resume</button>
-      </a>
+      {/* <a
+        href="/Aftab_Resume.pdf"
+        download
+        className="resume-btn"
+      >
+        Resume
+      </a> */}
     </nav>
   );
 }

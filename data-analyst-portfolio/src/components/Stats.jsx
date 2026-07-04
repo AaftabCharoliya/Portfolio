@@ -1,32 +1,34 @@
+import "../styles/Stats.css";
+
 function Stats() {
+  const stats = [
+    {
+      value: "3+",
+      label: "Projects Completed",
+    },
+    {
+      value: "6+",
+      label: "Tools Used",
+    },
+    {
+      value: "100%",
+      label: "Self Learning",
+    },
+    {
+      value: "1.5+",
+      label: "Years Practice",
+    },
+  ];
+
   return (
-    <section  data-aos="fade-up"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        gap: "30px",
-        padding: "60px 20px",
-        flexWrap: "wrap",
-      }}
-    >
-      <div className="card">
-        <h2>3+</h2>
-        <p>Projects Completed</p>
-      </div>
-
-      <div className="card">
-        <h2>6+</h2>
-        <p>Tools Used</p>
-      </div>
-
-      <div className="card">
-        <h2>100%</h2>
-        <p>Self Learning</p>
-      </div>
-
-      <div className="card">
-        <h2>1.5+</h2>
-        <p>Years Practice</p>
+    <section className="stats" data-aos="fade-up">
+      <div className="stats-container">
+        {stats.map((stat) => (
+          <div key={stat.label} className="stats-card">
+            <h2>{stat.value}</h2>
+            <p>{stat.label}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
