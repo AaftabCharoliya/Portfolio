@@ -3,6 +3,8 @@ import "../styles/Projects.css";
 import dashboardImg from "../assets/amazon-dashboard.png";
 import iplImg from "../assets/ipl-dashboard.png";
 import zomatoImg from "../assets/zomato-dashboard.png";
+import Image from "../assets/Screen.png";
+
 
 function Projects() {
   const projects = [
@@ -36,6 +38,19 @@ function Projects() {
       demo:
         "https://github.com/AaftabCharoliya/Data-Analytics-Project/blob/main/ZOMATO%20DASHBORD.png",
     },
+
+     {
+      title: "E-Commerce Big Data Analysis DashBoard",
+      image: Image,
+      description:
+        "Analyzed e-commerce data using Python, Pandas and NumPy, and built a Power BI dashboard to track revenue, costs, profit margins, orders and regional sales.",
+      tech: ["Power BI", "Pandas", "Numpy", "Python" ,"Data Analysis"],
+      github: "https://github.com/AaftabCharoliya/E---Commerce-Big-Data-Analysis.git",
+      demo:
+        "https://github.com/AaftabCharoliya/E---Commerce-Big-Data-Analysis/blob/main/deskboard%20Screenshot%20.png",
+    },
+
+
   ];
 
   return (
