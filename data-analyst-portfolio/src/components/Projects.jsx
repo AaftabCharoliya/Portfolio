@@ -8,16 +8,18 @@ import Image from "../assets/Screen.png";
 
 function Projects() {
   const projects = [
+
     {
-      title: "E-Commerce Dashboard",
-      image: dashboardImg,
+      title: "E-Commerce Big Data Analysis DashBoard",
+      image: Image,
       description:
-        "Power BI dashboard for sales analysis, KPI tracking, customer insights and product performance.",
-      tech: ["Power BI", "Pandas", "Data Analysis"],
-      github: "https://github.com/AaftabCharoliya/Data-Analytics-Project",
+        "Analyzed e-commerce data using Python, Pandas and NumPy, and built a Power BI dashboard to track revenue, costs, profit margins, orders and regional sales.",
+      tech: ["Power BI", "Pandas", "Numpy", "Python" ,"Data Analysis"],
+      github: "https://github.com/AaftabCharoliya/E---Commerce-Big-Data-Analysis.git",
       demo:
-        "https://github.com/AaftabCharoliya/Data-Analytics-Project/blob/main/E%20commerce999%20png.png",
+        "https://github.com/AaftabCharoliya/E---Commerce-Big-Data-Analysis/blob/main/deskboard%20Screenshot%20.png",
     },
+
     {
       title: "IPL 2025 Dashboard",
       image: iplImg,
@@ -40,16 +42,15 @@ function Projects() {
     },
 
      {
-      title: "E-Commerce Big Data Analysis DashBoard",
-      image: Image,
+      title: "E-Commerce Dashboard",
+      image: dashboardImg,
       description:
-        "Analyzed e-commerce data using Python, Pandas and NumPy, and built a Power BI dashboard to track revenue, costs, profit margins, orders and regional sales.",
-      tech: ["Power BI", "Pandas", "Numpy", "Python" ,"Data Analysis"],
-      github: "https://github.com/AaftabCharoliya/E---Commerce-Big-Data-Analysis.git",
+        "Power BI dashboard for sales analysis, KPI tracking, customer insights and product performance.",
+      tech: ["Power BI", "Pandas", "Data Analysis"],
+      github: "https://github.com/AaftabCharoliya/Data-Analytics-Project",
       demo:
-        "https://github.com/AaftabCharoliya/E---Commerce-Big-Data-Analysis/blob/main/deskboard%20Screenshot%20.png",
+        "https://github.com/AaftabCharoliya/Data-Analytics-Project/blob/main/E%20commerce999%20png.png",
     },
-
 
   ];
 
